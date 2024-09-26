@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -12,20 +10,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  /* position: fixed; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
 }
 
-
 .entering-container {
+  background-color: #ffffff;
   border-radius: 30px;
   padding: 40px;
   max-width: 400px;
+  width: 90%; /* Make it responsive by setting width relative to the screen */
   text-align: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .entering-logo {
@@ -57,6 +57,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  width: 100%; /* Make input fields responsive */
 }
 
 .form-control-custom:focus {
@@ -74,7 +75,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   transition: all 0.3s ease;
-  width: 100%;
+  width: 100%; /* Full width for the button */
   position: relative;
   overflow: hidden;
 }
@@ -128,4 +129,21 @@ body {
 
 .entering-link a:hover {
   color: #6366f1;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .entering-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .entering-logo {
+    font-size: 2.5rem;
+  }
+
+  .btn-primary-custom {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
 }
