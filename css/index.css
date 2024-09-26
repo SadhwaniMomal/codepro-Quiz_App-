@@ -130,19 +130,3 @@ body {
   color: #6366f1;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 600px) {
-  .entering-container {
-    padding: 20px;
-    max-width: 90%;
-  }
-
-  .entering-logo {
-    font-size: 2.5rem;
-  }
-
-  .btn-primary-custom {
-    font-size: 1rem;
-    padding: 8px 0;
-  }
-}
